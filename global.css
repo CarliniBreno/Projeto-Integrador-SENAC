@@ -1,0 +1,511 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Archivo Narrow', sans-serif;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    box-sizing: border-box;
+
+}
+
+
+@media (max-width: 950px){
+
+    .barra{
+       display: none !important;
+    }
+
+    #logo-responsiva{
+        display: block !important;
+    }
+
+    .menu{
+        display: none !important;
+    }
+
+    #hamburguer{
+        display: block !important;
+    }
+
+    #menu-responsivo{
+        width: 100%;
+        list-style: none;
+        flex-flow: column !important;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0px !important;
+        background-color: #121212;
+    }
+
+    #menu-responsivo li{
+        padding: 12px;
+    }
+
+    #menu-responsivo li a{
+        padding-bottom: 4px;
+        text-decoration: none;
+        color: #BAFF00;
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    #categorias{
+        margin-left: 20px;
+    }
+
+    #categorias:hover{
+        border-bottom: 4px solid #bbff0000 !important;
+        transition: 0.1s;
+    }
+
+    .dropdown{
+        
+        text-align: center;
+        margin-right: 0 !important;
+        margin-top: 950px !important;
+        position: absolute;
+        width: 100% !important;
+        height: 390px;
+    
+    }
+
+
+
+
+
+
+    /* footer */
+
+    .footer-info{
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .footer-info ul li{
+        font-size: 10px !important;
+    }
+    
+    .footer-info ul li:not(:last-child){
+        margin-right: 10px !important;
+    }
+    
+    .footer-info p{
+        margin-top: 50px !important;
+        margin-left: 0 !important;
+        font-size: 18px !important;
+    }
+    
+    
+    .newsletter{
+        flex-flow: column !important;
+        margin-left: 0 !important;
+    
+    }
+    
+    #email{
+        font-size: 15px !important;
+        height: 25px !important;
+        width: 200px !important;
+        margin-right: 0px !important;
+    }
+    
+    .social-media{
+        margin-top: 20px !important;
+        margin-left: 0px !important;
+    }
+
+
+    .pagamento{
+        display: none !important;
+    }
+    
+    
+
+    .rodape{
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    
+    .rodape div{
+        flex-flow: column !important;
+        align-items: center !important;
+        
+    }
+    
+    .rodape select{
+        width: 250px !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .rodape p{
+        margin-left: 0 !important;
+    }
+    
+
+}
+
+
+/* classes utilitarias------------------------------------------------ */
+
+.hide{
+    display: none !important;
+}
+
+#logo-responsiva{
+    margin-top: 56px;
+    margin-bottom: 15px;
+    display: none;
+}
+
+#hamburguer{
+    display: none;
+}
+
+#menu-responsivo{
+    display: flex;
+}
+/* navbar------------------------------------------------------------- */
+
+
+.navbar{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    height: 326px;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #121212;
+}
+
+.navbar svg{
+    cursor: pointer;
+}
+
+.barra{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 73px;
+}
+
+#pesquisa{
+    margin-right: 200px;
+}
+
+#logo{
+    margin-left: 30px;
+}
+
+.compra{
+    display: flex;
+    margin-left: 180px;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    width: 570px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 48px;
+}
+
+.menu li a{
+    padding-bottom: 4px;
+    text-decoration: none;
+    color: #BAFF00;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.menu-underline:hover{
+    border-bottom: 4px solid #BAFF00;
+    transition: 0.1s;
+}
+
+.menu-icons:hover{
+    width: 33px;
+    height: 33px;
+    transition: 0.2s;
+}
+
+.ajuste-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33px;
+    height: 33px;
+}
+
+.img-quem-somos{
+    width: 81px;
+    height: 81px;
+    border-radius: 40px;
+}
+
+#categorias{
+    margin-top: 7px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 4px solid rgba(245, 222, 179, 0);
+}
+
+#categorias p{
+    padding-bottom: 4px;
+    text-decoration: none;
+    color: #BAFF00;
+    font-weight: 400;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+#categorias:hover{
+    border-bottom: 4px solid #BAFF00;
+    transition: 0.1s;
+}
+
+.dropdown{
+
+    margin-right: 95px;
+    margin-top: 660px;
+    position: absolute;
+    width: 140px;
+    height: 390px;
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    border-radius: 12px;
+
+    background-color: #121212;
+}
+
+.dropdown li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.dropdown li{
+    border: 1px solid rgba(128, 128, 128, 0.281);
+    cursor: pointer;
+    padding: 5px 5px;
+   
+}
+
+.dropdown li:last-child{
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.dropdown li:first-child{
+    border-top: 1px solid #BAFF00;
+}
+
+.dropdown li:hover{
+    color: #BAFF00 !important;
+
+    transition: 0.2s;
+    background-color: #72727273;
+}
+
+.dropdown li:hover a{
+    color: #BAFF00;
+    transition: 0.2s;
+
+}
+
+/* footer--------------------------------- */
+
+.footer{
+    display: flex;
+    width: 100%;
+    flex-flow: column nowrap;
+}
+
+.footer-info{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: 400px;
+    background-color: #BAFF00;
+}
+
+.footer-info ul{
+    margin-top: 60px;
+    text-align: center;
+    width: 100%;
+    list-style: none;
+}
+
+.footer-info ul li{
+    cursor: pointer;
+    font-size: 19px;
+    font-weight: 400;
+    display: inline-block;
+}
+
+.footer-info ul li:not(:last-child){
+    margin-right: 30px;
+}
+
+.footer-info p{
+    margin-top: 100px;
+    margin-left: 94px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
+.newsletter{
+    display: flex;
+    margin-top: 40px;
+    margin-left: 94px;
+    align-items: center;
+
+}
+
+#email{
+    font-weight: 400;
+    font-size: 20px;
+    padding: 5px 20px;
+    height: 40px;
+    width: 650px;
+    margin-right: 840px;
+}
+
+
+.social-media{
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+.social-media:hover{
+    width: 39px;
+    height: 39px;
+    transition: 0.2s;
+}
+
+.rodape{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    flex-flow: column nowrap;
+    background-color: #121212;
+}
+
+.rodape p{
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 60px;
+    margin-left: 94px;
+    color: #BAFF00;
+}
+
+.rodape div{
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.rodape select{
+    font-weight: 400;
+    font-size: 20px;
+    padding: 5px 20px;
+    height: 40px;
+    width: 650px;
+    margin-left: 94px;
+    margin-right: 300px;
+}
+
+.pagamento{
+    list-style: none;
+    display: flex;
+}
+
+.pagamento li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 63.53px;
+    border-radius: 5px;
+    background-color: #BAFF00;
+}
+
+.pagamento li:not(:last-child){
+    margin-right: 30px;
+}
+
+
+/* footer--------------------------------- */
+
+
+
+.barraPesquisa{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.819);
+}
+
+.barraPesquisa section{
+    width: 100%;
+    background-color: #121212;
+    height: 326px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.barraPesquisa section input{
+    border: 3px solid #121212;
+    padding: 13px 20px;
+    font-size: 20px;
+    width: 530px;
+    border-right: none;
+}
+
+.barraPesquisa section input:focus{
+    border: 3px solid rgb(101, 101, 101);
+    outline: none;
+}
+
+.barraPesquisa section div{
+    display: flex;
+}
+
+.searchicon{
+    border: 3px solid #121212;
+    border-left: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 53px;
+    background-color: white;
+}
+
+.close{
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    position: absolute;
+    top: 220px;
+}
+
+.close:hover{
+    filter: brightness(100);
+    transition: 0.2s;
+}
